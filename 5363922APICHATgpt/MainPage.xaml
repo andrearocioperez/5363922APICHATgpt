@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_5363922APICHATgpt.MainPage"
+             BackgroundColor="Black">
+
+    <ScrollView>
+        <StackLayout Padding="20" >
+            <Image Source="chatgpt.png" WidthRequest="35" HorizontalOptions="StartAndExpand"/>
+
+            <Image Source="letras.jpg" WidthRequest="200" HorizontalOptions="Center"/>
+
+            <Entry x:Name="userInputEntry"
+               Placeholder="Escribe tu mensaje aquí..."
+               WidthRequest="300"
+               Margin="0,20,0,0" />
+            
+            <Button Text="Enviar"
+                Clicked="Button_Clicked"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                WidthRequest="150"
+                Margin="0,20,0,0" />
+            
+            <Label x:Name="responseLabel"
+               Text="Resultado de la petición a ChatGPT aparecerá aquí."
+               Margin="0,20,0,0"
+               LineBreakMode="WordWrap" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
